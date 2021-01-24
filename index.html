@@ -20,24 +20,15 @@
     <script src="./js/bootstrap.min.js"></script>
     
     <!--Aquí empieza el cuerpo de página-->
-    
-    <div class="container-fluid">
-		<div class="jumbotron" style= "margin-bottom: 0px;">
-			<p class="h1">Página de ejemplo</p>
-			<p class="lead">Explicación la creación de un menú principal</p>
-		</div>
-
+   
 <!--Menú de navegación-->
 
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#div_colapsado">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<a href="#" class="navbar-brand">
-				<img src="https://via.placeholder.com/50x30">
+		<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+	
+			<a href="#inicio" class="navbar-brand">
+				<img id="icono" class="rounded-circle" src="img/mi_foto.jpg" alt="mi icono">
 			</a>
-			<div class="collapse navbar-collapse" id="div_colapsado">
+			
 				<ul class="navbar-nav">
 					<li class="nav-item">
 						<a href="#inicio" class="nav-link">Inicio</a>
@@ -61,43 +52,66 @@
 						<a href="#contacto" class="nav-link">Contacto</a>
 					</li>
 				</ul>
-			</div>				
+							
 		</nav>
 		
-
+	  <!--Inicio-->
+	  
 		<div class="jumbotron" id ="inicio" style= "margin-bottom: 0px;">
-			<p class="h1">Inicio</p>
-			<p class="lead">Dmytro Petrin</p>
-			<a href="https://www.facebook.com/profile.php?id=100005278172294">Facebook</a>
-			<a href="https://www.linkedin.com/in/dmytro-petrin-93b5aa179/">LinkedIn</a>
-			<a href="https://github.com/DmytroPetrin">GitHub</a>
+		<p class="h1 d-none">Inicio</p>
+			<p class="display-3 text-center font-weight-bold ">Dmytro Petrin
+			<a class="" href="https://www.facebook.com/profile.php?id=100005278172294"><img id="redes" src="img/facebook.png" alt="icono facebook"></a>
+			<a class="" href="https://www.linkedin.com/in/dmytro-petrin-93b5aa179/"><img id="redes" src="img/linkedin.png" alt="icono linkedin"></a>
+			<a href="https://github.com/DmytroPetrin"><img id="redes" src="img/github.png" alt="icono github"></a>
+		</p>
 		</div>
 
+	   <!--Sobre mi-->
+	   
 		<div class="jumbotron" id ="sobre_mi" style= "margin-bottom: 0px;">
 			<p class="h1">Sobre Mi</p>
-			<img src="" alt="Mi foto de perfil">
-			<p>cosas sobre mi...</p>
+			<div class="row">
+			<img class="col-6 " src="img/mi_foto.jpg" alt="Mi foto de perfil">
+			<p class="col-6 lead " >Me llamo Dmytro Petrin y tengo 29 años. Soy de nacionalidad ucraniana y vivo 
+				en España alrededor de 15 años. Me acostumbre mucho a este país y la verdad estoy muy a gusto con
+				 la cultura y las costumbres de la gente. Me gusta la ciencia y la informática, son las materias 
+				 que mejor me daban de pequeño. Por esta razón he terminado el grado de Química y por esta razón 
+				 estudio un ciclo formativo de Desarrollo de Aplicaciones Web. La informática en si tiene mucho 
+				 potencial de automatización de las tareas cotidianas. Creo que en un futuro cercano mayoría de
+				  gente sabrá programar, como ocurre hoy en día con mecanografía, la gente aprende técnica eficiente 
+				  de escribir con el teclado porque ordenadores ocupan parte importante de nuestro día a día.</p>
+			</div>
 		</div>
+
+<!--Cualidades-->
 
 		<div class="jumbotron" id ="cualidades" style= "margin-bottom: 0px;">
 			<p class="h1">Cualidades</p>
 			<p class="lead">Dmytro Petrin</p>
 		</div>
 
+<!--Curriculum-->
+
 		<div class="jumbotron" id ="curriculum" style= "margin-bottom: 0px;">
 			<p class="h1">Curriculum</p>
 			<p class="lead">Dmytro Petrin</p>
 		</div>
+
+<!--Premios-->
 
 		<div class="jumbotron" id ="premios" style= "margin-bottom: 0px;">
 			<p class="h1">Premios</p>
 			<p class="lead">Dmytro Petrin</p>
 		</div>
 
+<!--Aptitudes-->
+
 		<div class="jumbotron" id ="aptitudes" style= "margin-bottom: 0px;">
 			<p class="h1">Aptitudes</p>
 			<p class="lead">Dmytro Petrin</p>
 		</div>
+
+<!--Contacto-->
 
 		<div class="jumbotron" id ="contacto" style= "margin-bottom: 0px;">
 			<p class="h1">Contacto</p>
@@ -106,7 +120,9 @@
         
     </div>
 
+<footer>
 
+</footer>
 
 </BODY>
 </HTML>
