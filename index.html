@@ -17,21 +17,22 @@
     <!--Los script necesarios para Bootstrap-->
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	
     
     <!--Aquí empieza el cuerpo de página-->
    
 <!--Menú de navegación-->
 
-		<nav class="navbar navbar-expand navbar-dark bg-dark sticky-top">
+		<nav id="menu" class="navbar navbar-expand navbar-dark sticky-top align-justify scrolling-navbar gris">
 	
 			<a href="#inicio" class="navbar-brand">
 				<img id="icono" class="rounded-circle" src="img/mi_foto.jpg" alt="mi icono">
 			</a>
-			
+			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a href="#inicio" class="nav-link">Inicio</a>
+						<a href="#inicio" class="nav-link active">Inicio</a>
 					</li>
 					<li class="nav-item">
 						<a href="#sobre_mi" class="nav-link">Sobre Mi</a>
@@ -52,12 +53,12 @@
 						<a href="#contacto" class="nav-link">Contacto</a>
 					</li>
 				</ul>
-							
+				</div>			
 		</nav>
 		
-	  <!--Inicio-->
 	  
-		<div class="jumbotron" id ="inicio" style= "margin-bottom: 0px;">
+	  <div class="container-fluid"><!--Inicio
+		<div class="row">
 		<p class="h1 d-none">Inicio</p>
 			<p class="display-3 text-center font-weight-bold ">Dmytro Petrin
 			<a class="" href="https://www.facebook.com/profile.php?id=100005278172294"><img id="redes" src="img/facebook.png" alt="icono facebook"></a>
@@ -65,13 +66,33 @@
 			<a href="https://github.com/DmytroPetrin"><img id="redes" src="img/github.png" alt="icono github"></a>
 		</p>
 		</div>
+-->
+		<!--prueba-->
+	   <div class="conteiner-fluid">
+		   <div class="card-columns" height="100">
+			<div class="card">
+				<div id="p1" class="card-body">
+				 <div class="card-text h1">Inicio</div>
+				</div>
+			</div>	    
+		   <div class="card ">
+			   <div class="card-body">
+				
+				<p class="card-text display-3 text-center font-weight-bold">Dmytro Petrin</p>
+				<a href="https://www.facebook.com/profile.php?id=100005278172294" class="card-link"><img id="redes" src="img/facebook.png" alt="icono facebook"></a>
+				<a href="https://www.facebook.com/profile.php?id=100005278172294" class="card-link"><i class="fa fa-facebook"></i></a>
+			   </div>
+		   </div>
+	   </div>
+	   </div>
+	   <br>
 
 	   <!--Sobre mi-->
 	   
 		<div class="jumbotron" id ="sobre_mi" style= "margin-bottom: 0px;">
 			<p class="h1">Sobre Mi</p>
 			<div class="row">
-			<img class="col-6 " src="img/mi_foto.jpg" alt="Mi foto de perfil">
+			<img class="col-6" src="img/mi_foto.jpg" alt="Mi foto de perfil">
 			<p class="col-6 lead " >Me llamo Dmytro Petrin y tengo 29 años. Soy de nacionalidad ucraniana y vivo 
 				en España alrededor de 15 años. Me acostumbre mucho a este país y la verdad estoy muy a gusto con
 				 la cultura y las costumbres de la gente. Me gusta la ciencia y la informática, son las materias 
@@ -87,39 +108,96 @@
 
 		<div class="jumbotron" id ="cualidades" style= "margin-bottom: 0px;">
 			<p class="h1">Cualidades</p>
-			<p class="lead">Dmytro Petrin</p>
+			<p class="lead">Soy una persona trabajadora, proactiva y capaz de formar parte de un equipo.</p>
 		</div>
 
 <!--Curriculum-->
 
 		<div class="jumbotron" id ="curriculum" style= "margin-bottom: 0px;">
 			<p class="h1">Curriculum</p>
-			<p class="lead">Dmytro Petrin</p>
+			<div>
+				<p class="lead">EDUCACIÓN Y FORMACIÓN</p>
+				<p>2011 - 2017</p>
+				<p>Grado en Química</p>
+				<p>Universidad de Alicante, Alicante (España)</p>
+				<br>
+				<p>2019 - presente</p>
+				<p>Ciclo Superior Desarrollo de Aplicaciones Web (Distancia)</p>
+				<p>CIFP Carlos III, Cartagena (España)</p>
+				<br>
+				<p class="lead">EXPERIENCIA PROFESIONAL</p>
+				<p>01/08/2008 – 01/08/2017</p>
+				<p>Camarero</p>
+				<p>Pizzeria Centro, Torrevieja (España)</p>
+				<br>
+				<p>01/07/2012 – 01/08/2012</p>
+				<p>Camarero</p>
+				<p>Cafeteria Valor, Torrevieja (España)</p>
+				<br>
+				<p>10/05/2019 – 06/12/2020</p>
+				<p>Camarero</p>
+				<p>Tommy Mel's (Thader), Murcia (España)</p>
+				<br>
+				<p>09/12/2020 - presente</p>
+				<p>Operario de planta química</p>
+				<p>Derivados Químicos SAU, Alcantarilla(España)</p>
+				<br>
+				<p class="lead">Lenguas</p>
+				<p>Ucraniano, Ruso, Español, Inglés</p>
+				<br>
+				<p class="">Permiso de conducir: B</p>
+				<p class="">Coche propio: Si</p>
+			</div>
 		</div>
 
 <!--Premios-->
 
 		<div class="jumbotron" id ="premios" style= "margin-bottom: 0px;">
 			<p class="h1">Premios</p>
-			<p class="lead">Dmytro Petrin</p>
+			<p class="lead">No he tenido ningún premio reconocible ya que no suelo participar en competiciones.</p>
 		</div>
 
 <!--Aptitudes-->
 
 		<div class="jumbotron" id ="aptitudes" style= "margin-bottom: 0px;">
 			<p class="h1">Aptitudes</p>
-			<p class="lead">Dmytro Petrin</p>
+			<p class="lead">Son mis aptitudes: Creatividad, Flexibilidad, Seguridad, Honestidad, Disciplina, Polivalencia, Lealtad, Capasidad de resolucion de problemas</p>
 		</div>
 
 <!--Contacto-->
 
 		<div class="jumbotron" id ="contacto" style= "margin-bottom: 0px;">
 			<p class="h1">Contacto</p>
-			<p class="lead">Dmytro Petrin</p>
+			<p class="lead"><form id="formulario" name="formContacto" method="post" action="index.html" >
+				<label for="nombre">Nombre*:</label>
+				<input name="name" placeholder="Introduce tu nombre" class="required" /><br />
+					
+				<label for="apellidos">Apellidos*:</label>
+				<input name="surname" placeholder="Tus dos apellidos" class="required" /><br />
+							
+				<label for="empresa">Empresa*:</label>
+				<input name="company" placeholder="¿Para quién trabajas?" class="required" /><br />
+				
+				<label for="departamento">Cargo/Departamento:</label>
+				<input name="department" placeholder="¿Qué función desempeñas?" /><br />
+						
+				<label for="telefono">Teléfono:</label>
+				<input name="phone" placeholder="¿Hablamos?" /><br />
+					
+				<label for="mail">E-mail*:</label>
+				<input name="mail" placeholder="Podré contestarte" class="required" /><br />
+						
+				<label id="modif01" for="comentario">Comentario:</label>
+				<textarea id="modif02" placeholder="Escribeme tu comentario aquí" name="comment"></textarea><br />
+								
+				<div id="aster" > * | Campos obligatorios</div>
+										
+				<input class="botonAcceder" type="submit" id="boton" value="Enviar" />
+			</form>  </p>
 		</div>
         
     </div>
-
+</div>
 <footer>
 
 </footer>

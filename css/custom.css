@@ -9,3 +9,16 @@
     margin-right: 5px;
 
 }
+
+body{
+    background-image: linear-gradient(to top, #091931, #40465b, #777888, #b0b0b8, #ebebeb);
+}
+
+.gris{
+    background: rgba(0, 0, 0, 0.185);
+}
+
+
+#p{
+    height: 100px !important;
+}
