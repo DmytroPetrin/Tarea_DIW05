@@ -20,7 +20,8 @@ body{
 }
 
 .gris{
-    background: rgba(0, 0, 0, 0.185);
+    background: rgba(0, 0, 0, 0.233);
+    transition: all 1s ease;
 }
 
 .color{
@@ -41,11 +42,12 @@ body{
 }
 
 #pie{
-    height: 200px;
+    height: 220px;
     margin-bottom: 0px !important;
     padding-top: 5px;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 40px;
    }
 
 #bordes{

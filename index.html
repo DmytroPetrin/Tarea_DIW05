@@ -17,40 +17,41 @@
     <!--Los script necesarios para Bootstrap-->
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	
-    
+    <script src="./js/bootstrap.min.js"></script>
+    <!--Script para que menu cambia de color y scroll sueave-->
+	<script src="./js/navegacion.js" ></script>
+       
     <!--Aquí empieza el cuerpo de página-->
 
     <!--Menú de navegación-->
     <header>
-		<nav class="col-12 navbar navbar-expand bg-dark navbar-dark fixed-top">
+		<nav id="menu" class="col-12 navbar gris navbar-expand navbar-dark fixed-top">
 	
 			<a href="#inicio" class="navbar-brand " >
 				<img id="icono" class="rounded-circle" src="img/mi_foto.jpg" alt="mi icono">
 			</a>
 		
-				<ul class="nav navbar-nav ml-auto">
+				<ul class="nav navbar-nav ml-auto h5">
 					<li class="nav-item">
-						<a href="#inicio" class="nav-link active">Inicio</a>
+						<a href="#nav_inicio" class="nav-link">Inicio</a>
 					</li>
 					<li class="nav-item">
-						<a href="#sobre_mi" class="nav-link">Sobre Mi</a>
+						<a href="#nav_sobre_mi" class="nav-link">Sobre Mi</a>
 					</li>
 					<li class="nav-item">
-						<a href="#cualidades" class="nav-link">Cualidades</a>
+						<a href="#nav_cualidades" class="nav-link">Cualidades</a>
 					</li>
 					<li class="nav-item">
-						<a href="#curriculum" class="nav-link">Curriculum</a>
+						<a href="#nav_curriculum" class="nav-link">Curriculum</a>
 					</li>
 					<li class="nav-item">
-						<a href="#premios" class="nav-link">Premios</a>
+						<a href="#nav_premios" class="nav-link">Premios</a>
 					</li>
 					<li class="nav-item">
-						<a href="#aptitudes" class="nav-link">Aptitudes</a>
+						<a href="#nav_aptitudes" class="nav-link">Aptitudes</a>
 					</li>
 					<li class="nav-item">
-						<a href="#contacto" class="nav-link">Contacto</a>
+						<a href="#nav_contacto" class="nav-link">Contacto</a>
 					</li>
 				</ul>
 						
@@ -69,32 +70,41 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/cigueña.jpg" class="d-block w-100" alt="cigueña">
+				<img src="img/cigueña.jpg" class="d-block w-100" alt="cigüeña">
+				<div class="carousel-caption d-none d-md-block">
+					<p>Cigüeña</p>
+				</div>
               </div>
               <div class="carousel-item">
-                <img src="img/montaña.jpg" class="d-block w-100" alt="montañas">
+				<img src="img/montaña.jpg" class="d-block w-100" alt="montañas">
+				<div class="carousel-caption d-none d-md-block">
+					<p>Montañas</p>
+				</div>
               </div>
               <div class="carousel-item">
-                <img src="img/bosque.jpg" class="d-block w-100" alt="bosque">
+				<img src="img/bosque.jpg" class="d-block w-100" alt="bosque">
+				<div class="carousel-caption d-none d-md-block">
+					<p>Bosque Boreal</p>
+				</div>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
+              <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
+              <span class="sr-only">Siguiente</span>
             </a>
           </div>
         
 
     <!--Inicio-->
-    <div class="row" id="inicio">
+    <div class="row" id="nav_inicio">
         <div class="col-2">
             <a class="card color2">
                 <span>
-                    <div class="h1 text-center text-light">Inicio</div>
+                    <div class="h2 text-center text-light">Inicio</div>
                 </span>
             </a>
         </div>
@@ -120,11 +130,11 @@
     </div>
 
     <!--Sobre mi-->
-    <div class="row" id="sobre_mi">
+    <div class="row" id="nav_sobre_mi">
         <div class="col-2">
             <a class="card color2">
                 <span>
-                    <div class="h1 text-center text-light">Sobre mi</div>
+                    <div class="h2 text-center text-light">Sobre mi</div>
                 </span>
             </a>
         </div>
@@ -160,11 +170,11 @@
     </div>
 
      <!--Cualidades-->
-     <div class="row" id="cualidades">
+     <div class="row" id="nav_cualidades">
         <div class="col-2">
             <a class="card color2">
                 <span>
-                    <div class="h1 text-center text-light">Cualidades</div>
+                    <div class="h2 text-center text-light">Cualidades</div>
                 </span>
             </a>
         </div>
@@ -175,7 +185,7 @@
         <div class="col-10">
             <a class="card color">
                 <span>
-                    <div class=" h1 text-center font-italic font-weight-bold">
+                    <div class=" h2 text-center font-italic font-weight-bold">
                         Soy una persona trabajadora, proactiva y capaz de formar parte de un equipo.
                     </div>
                 </span>
@@ -184,11 +194,11 @@
     </div>
 
     <!--Curriculum-->
-    <div class="row" id="curriculum">
+    <div class="row" id="nav_curriculum">
         <div class="col-2">
             <a class="card color2">
                 <span>
-                    <div class="h1 text-center text-light">Curriculum</div>
+                    <div class="h2 text-center text-light">Curriculum</div>
                 </span>
             </a>
         </div>
@@ -382,11 +392,11 @@
     </div>
 
     <!--Premios-->
-    <div class="row" id="premios">
+    <div class="row" id="nav_premios">
         <div class="col-2">
             <a class="card color2">
                 <span>
-                    <div class="h1 text-center text-light">Premios</div>
+                    <div class="h2 text-center text-light">Premios</div>
                 </span>
             </a>
         </div>
@@ -406,11 +416,11 @@
     </div>
 
   <!--Aptitudes-->
-  <div class="row" id="aptitudes">
+  <div class="row" id="nav_aptitudes">
     <div class="col-2">
         <a class="card color2">
             <span>
-                <div class="h1 text-center text-light">Aptitudes</div>
+                <div class="h2 text-center text-light">Aptitudes</div>
             </span>
         </a>
     </div>
@@ -423,25 +433,21 @@
             
             <ul class="list-group lead text-center">
                 <li class="list-group-item active font-weight-bold">Mis Aptitudes</li>
-                <li class="list-group-item">Creatividad</li>
-                <li class="list-group-item">Flexibilidad</li>
-                <li class="list-group-item">Seguridad</li>
-                <li class="list-group-item">Honestidad</li>
-                <li class="list-group-item">Disciplina</li>
-                <li class="list-group-item">Polivalencia</li>
-                <li class="list-group-item">Lealtad</li>
-                <li class="list-group-item">Capacidad de resolución de problemas</li>
+                <li class="list-group-item">Capacidad de resolución de problemas.</li>
+                <li class="list-group-item">Soy apto de reparar algunos electrodomésticos con funcionamiento sencillo.</li>
+                <li class="list-group-item">Se me dan bien aprender nuevos idiomas.</li>
+                <li class="list-group-item">Se me da bien cocinar.</li>
             </ul>
         </div>
     </div>
 </div>
 
 <!--Contacto-->
-<div class="row" id="contacto">
+<div class="row" id="nav_contacto">
     <div class="col-2">
         <a class="card color2">
             <span>
-                <div class="h1 text-center text-light">Contacto</div>
+                <div class="h2 text-center text-light">Contacto</div>
             </span>
         </a>
     </div>
